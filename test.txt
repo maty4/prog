@@ -1,2 +1,0 @@
-print ("AUIdhuias")
-print("ZWeite Änderung")
