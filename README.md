@@ -2,7 +2,6 @@
 ## Ausgangslage:
 ## Funktion/Idee:
 ## Worklflow:
-### Dateneingabe
-### Datenverarbeitung/Speicherung
-### Datenausgabe
-
+### Dateneingabe:
+### Datenverarbeitung/Speicherung:
+### Datenausgabe:
