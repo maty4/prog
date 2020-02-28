@@ -19,4 +19,4 @@ Persönliche Daten werden bei der Registration gespeichert.
 ### Datenausgabe:
 Der Kalender gibt aus, dass die Terminbuchung erfolgreich war und blockiert den Zeitraum.
 
-![Alt-Text](C:\Users\Marko\prog2programmieren.drawio\)
+[Bild 1]: C:\Users\Marko\prog2\programmieren.png "Ablauf"
