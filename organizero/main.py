@@ -34,13 +34,15 @@ class Data(db.Model):
         self.email = email
         self.telefon = telefon
 
+
+#Inhalt der Tables anzeigen
 @app.route('/')
 def Index():
     all_data = Data.query.all()
     return render_template("index.html", kontakte = all_data)
 
 
-#Für das Hinzufügen von Kontakten
+#Für das Hinzufügen von Kunden
 @app.route('/insert', methods = ['POST'])
 def insert():
     if request.method == 'POST':
@@ -52,7 +54,7 @@ def insert():
         db.session.add(my_data)
         db.session.commit()
 
-        flash("Kontakt erfolgreich hinzugefügt")
+        flash("Kunde erfolgreich hinzugefügt")
 
         return redirect(url_for('Index'))
 
@@ -69,7 +71,7 @@ def update():
         my_data.telefon = request.form['telefon']
 
         db.session.commit()
-        flash("Kontakt erfolgreich bearbeitet")
+        flash("Kunde erfolgreich bearbeitet")
 
         return redirect(url_for('Index'))
 
@@ -82,7 +84,7 @@ def delete(id):
     my_data = Data.query.get(id)
     db.session.delete(my_data)
     db.session.commit()
-    flash("Kontakt erfolgreich gelöscht")
+    flash("Kunde erfolgreich gelöscht")
 
     return redirect (url_for("Index"))
 
